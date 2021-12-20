@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin-top: 0;
+	font-family: sans-serif;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.medsos{
+	padding: 5px 0;
+	background-color: #adadad;
+}
+.medsos	ul li {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	margin-right: 10px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 25px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #adadad;
+    z-index: 1;
+}
+
+header h1{
+	float: left;
+	padding: 15px 0px;
+	color: #fff;
+	word-spacing: 2px;
+}
+header ul{
+	float: right;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a{
+	padding: 25px 20px;
+	display: inline-block;
+}
+header ul li a:hover{
+	background-color: #ffffff;
+	color: #adadad;
+}
+.active{
+	background-color: #fff;
+	color: #adadad;
+}
+.banner{
+	height: 60vh;
+	background-image: url(../img/1.png);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.banner h2{
+	color: #fff;
+	z-index: 0;
+	padding: 20px 25px;
+	border: 4px solid #fff;
+}
+
+body {
+	background-image: url(../img/2.png)
+}
+section{
+	padding: 50px 0;
+}
+section h3{
+	text-align: center;
+	padding: 20px 0;
+	color: #000000;
+}
+.about h4 {
+	padding: 20px 0;
+    font-family: 'verdana';
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+.about p{
+	text-align: center;
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+}
+.product-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.product img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.product p {
+    font-family: 'calibri';
+    font-size: 15px;
+	word-spacing: 2px;
+    text-align: center;
+    color: #000000;
+}
+
+a.tbl {
+	margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact{
+	background-color: #adadad;
+}
+
+footer{
+	padding: 30px 0;
+	background-color: #adadad;
+	color: #ffffff;
+	text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+	.container{
+		width: 90%;
+	}
+
+	.banner{
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+
+	.product p {
+		font-size: 90%;
+	}
+
+	.a tbl {
+		font-size: 100%;
+		float: none;
+	}
+
+	.about h4{
+		font-size: 100%;
+	}
+
+	.about p{
+		font-size: 100%;
+	}
+}
